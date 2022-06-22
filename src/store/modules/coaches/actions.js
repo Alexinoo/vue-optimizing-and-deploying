@@ -12,7 +12,7 @@ export default {
     const token = context.rootGetters.token;
 
     const response = await fetch(
-      `https://vue-http-demo-85e9e.firebaseio.com/coaches/${userId}.json?auth=` +
+      `https://vue-http-demo-97b72-default-rtdb.firebaseio.com/coaches/${userId}.json?auth=` +
         token,
       {
         method: 'PUT',
@@ -37,7 +37,7 @@ export default {
     }
 
     const response = await fetch(
-      `https://vue-http-demo-85e9e.firebaseio.com/coaches.json`
+      `https://vue-http-demo-97b72-default-rtdb.firebaseio.com/coaches.json`
     );
     const responseData = await response.json();
 
